@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Charts and Such</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="data.js"></script>
+    <style>
+        .elements {
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+            grid-gap: 10px;
+        }
+
+        .element {
+            background: rgb(207, 207, 207);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4" id="app">
+        <div class="jumbotron">
+            <h1>Charts</h1>
+        </div>
+
+        <div class="elements">
+            <div class="element text-center" v-for="element in elements" :key="element.name">
+                <h1>
+                    {{element.symbol}}
+                </h1>
+
+                <chart-component :element="element"></chart-component>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+
+        let ChartComponent = {
+            props : ['element'],
+            template : `
+            <div class="chart">
+                Display the chart data here
+            </div>
+            `,
+            data(){
+                return {
+                    chart : false
+                }
+            },
+            mounted(){
+                this.chart = this.myChart
+            },
+            computed : {
+                myChart(){
+                    return Highcharts.chart(this.$el, {
+                        chart: {
+                            type: 'scatter',
+                            zoomType: 'xy'
+                        },
+                        title: {
+                            text: this.element.name
+                        },
+                        series: [{
+                            name: this.element.symbol,
+                            data: this.element.data
+                        }]
+                    });
+                }
+            }
+        }
+
+        new Vue({
+            el : '#app',
+            components : {
+                ChartComponent
+            },
+            data(){
+                return {
+                    elements : elements
+                }
+            }
+        })
+    </script>
+</body>
+</html>
