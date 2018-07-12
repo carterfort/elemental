@@ -1,5 +1,18 @@
- .elements {
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
-    grid-gap: 10px;
+ .elements table {
+    width: 100%;
+}
+
+.elements tr {
+    page-break-inside: avoid;
+}
+
+.element {
+    width: 350px;
+}
+
+@media print {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
 }

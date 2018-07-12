@@ -54,6 +54,8 @@ let ChartComponent = {
     }
 }
 
+const elementsPerRow = 3
+
 new Vue({
     el: '#app',
     components: {
@@ -69,11 +71,20 @@ new Vue({
             return elements.filter(e => {
                 if (this.elementSearch) {
                     let search = this.elementSearch.toLowerCase();
-                    return e.name.toLowerCase().includes(search) || e.symbol.toLowerCase().includes(search)
+                    return e.name.to.includes(search) || e.symbol.to.includes(search)
                 }
 
                 return true;
             })
+        },
+        elementRows(){
+            var rows = [];
+            var tempElements = JSON.parse(JSON.stringify(this.elements));
+            while(tempElements.length > 0){
+                rows.push(tempElements.slice(0, elementsPerRow));
+                tempElements.splice(0, elementsPerRow);
+            }           
+            return rows;
         }
     }
 })

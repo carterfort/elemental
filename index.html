@@ -15,15 +15,20 @@
 <body>
     <div id="app">
         <div class="container mt-4" >
-            <div class="jumbotron">
+            <div class="jumbotron d-print-none">
                 <h1>Charts</h1>
                 <input class="form-control" placeholder="Filter Elements..." v-model="elementSearch" />
             </div>        
 
             <div class="elements">
-                <div class="element text-center" v-for="element in elements" :key="element.name" :class="element.symbol.toLowerCase()">        
-                    <chart-component :element="element"></chart-component>
-                </div>
+                <table>
+                    
+                    <tr class="text-center" v-for="elements in elementRows">
+                        <td v-for="element in elements" :class="element.symbol.toLowerCase()">
+                            <chart-component class="element" :element="element"></chart-component>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
