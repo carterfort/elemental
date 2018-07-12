@@ -69,7 +69,7 @@ new Vue({
             return elements.filter(e => {
                 if (this.elementSearch) {
                     let search = this.elementSearch.toLowerCase();
-                    return e.name.includes(search) || e.symbol.includes(search)
+                    return e.name.toLowerCase().includes(search) || e.symbol.toLowerCase().includes(search)
                 }
 
                 return true;
