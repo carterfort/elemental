@@ -14,7 +14,7 @@ $names = $rows[2];
 
 foreach ($symbols as $i => $symbol) {
     $elements[$i]['symbol'] = $symbol;
-    $elements[$i]['name'] = $names[$i];
+    $elements[$i]['name'] = ucwords($names[$i]);
 }
 array_shift($rows);
 array_shift($rows);

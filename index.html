@@ -17,6 +17,7 @@
         <div class="container mt-4" >
             <div class="jumbotron">
                 <h1>Charts</h1>
+                <input class="form-control" placeholder="Filter Elements..." v-model="elementSearch" />
             </div>        
 
             <div class="elements">
@@ -27,53 +28,6 @@
         </div>
     </div>
 
-    <script>
-
-        let ChartComponent = {
-            props : ['element'],
-            template : `
-            <div class="chart">
-                Display the chart data here
-            </div>
-            `,
-            data(){
-                return {
-                    chart : false
-                }
-            },
-            mounted(){
-                this.chart = this.myChart
-            },
-            computed : {
-                myChart(){
-                    return Highcharts.chart(this.$el, {
-                        chart: {
-                            type: 'scatter',
-                            zoomType: 'xy'
-                        },
-                        title: {
-                            text: this.element.name + " ("+this.element.symbol+")"
-                        },
-                        series: [{
-                            name: this.element.symbol,
-                            data: this.element.data
-                        }]
-                    });
-                }
-            }
-        }
-
-        new Vue({
-            el : '#app',
-            components : {
-                ChartComponent
-            },
-            data(){
-                return {
-                    elements : elements
-                }
-            }
-        })
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 let elements = [
     {
         "symbol": "H",
-        "name": "hydrogen",
+        "name": "Hydrogen",
         "data": [
             [
                 1,
@@ -11,7 +11,7 @@ let elements = [
     },
     {
         "symbol": "He",
-        "name": "helium",
+        "name": "Helium",
         "data": [
             [
                 1,
@@ -25,7 +25,7 @@ let elements = [
     },
     {
         "symbol": "Li",
-        "name": "lithium",
+        "name": "Lithium",
         "data": [
             [
                 1,
@@ -43,7 +43,7 @@ let elements = [
     },
     {
         "symbol": "Be",
-        "name": "beryllium",
+        "name": "Beryllium",
         "data": [
             [
                 1,
@@ -65,7 +65,7 @@ let elements = [
     },
     {
         "symbol": "B",
-        "name": "boron",
+        "name": "Boron",
         "data": [
             [
                 1,
@@ -91,7 +91,7 @@ let elements = [
     },
     {
         "symbol": "C",
-        "name": "carbon",
+        "name": "Carbon",
         "data": [
             [
                 1,
@@ -121,7 +121,7 @@ let elements = [
     },
     {
         "symbol": "N",
-        "name": "nitrogen",
+        "name": "Nitrogen",
         "data": [
             [
                 1,
@@ -155,7 +155,7 @@ let elements = [
     },
     {
         "symbol": "O",
-        "name": "oxygen",
+        "name": "Oxygen",
         "data": [
             [
                 1,
@@ -193,7 +193,7 @@ let elements = [
     },
     {
         "symbol": "F",
-        "name": "fluorine",
+        "name": "Fluorine",
         "data": [
             [
                 1,
@@ -235,7 +235,7 @@ let elements = [
     },
     {
         "symbol": "Ne",
-        "name": "neon",
+        "name": "Neon",
         "data": [
             [
                 1,
@@ -281,7 +281,7 @@ let elements = [
     },
     {
         "symbol": "Na",
-        "name": "sodium",
+        "name": "Sodium",
         "data": [
             [
                 1,
@@ -331,7 +331,7 @@ let elements = [
     },
     {
         "symbol": "Mg",
-        "name": "magnesium",
+        "name": "Magnesium",
         "data": [
             [
                 1,
@@ -385,7 +385,7 @@ let elements = [
     },
     {
         "symbol": "Al",
-        "name": "aluminium",
+        "name": "Aluminium",
         "data": [
             [
                 1,
@@ -443,7 +443,7 @@ let elements = [
     },
     {
         "symbol": "Si",
-        "name": "silicon",
+        "name": "Silicon",
         "data": [
             [
                 1,
@@ -505,7 +505,7 @@ let elements = [
     },
     {
         "symbol": "P",
-        "name": "phosphorus",
+        "name": "Phosphorus",
         "data": [
             [
                 1,
@@ -571,7 +571,7 @@ let elements = [
     },
     {
         "symbol": "S",
-        "name": "sulfur",
+        "name": "Sulfur",
         "data": [
             [
                 1,
@@ -641,7 +641,7 @@ let elements = [
     },
     {
         "symbol": "Cl",
-        "name": "chlorine",
+        "name": "Chlorine",
         "data": [
             [
                 1,
@@ -715,7 +715,7 @@ let elements = [
     },
     {
         "symbol": "Ar",
-        "name": "argon",
+        "name": "Argon",
         "data": [
             [
                 1,
@@ -793,7 +793,7 @@ let elements = [
     },
     {
         "symbol": "K",
-        "name": "potassium",
+        "name": "Potassium",
         "data": [
             [
                 1,
@@ -875,7 +875,7 @@ let elements = [
     },
     {
         "symbol": "Ca",
-        "name": "calcium",
+        "name": "Calcium",
         "data": [
             [
                 1,
@@ -961,7 +961,7 @@ let elements = [
     },
     {
         "symbol": "Sc",
-        "name": "scandium",
+        "name": "Scandium",
         "data": [
             [
                 1,
@@ -1051,7 +1051,7 @@ let elements = [
     },
     {
         "symbol": "Ti",
-        "name": "titanium",
+        "name": "Titanium",
         "data": [
             [
                 1,
@@ -1145,7 +1145,7 @@ let elements = [
     },
     {
         "symbol": "V",
-        "name": "vanadium",
+        "name": "Vanadium",
         "data": [
             [
                 1,
@@ -1243,7 +1243,7 @@ let elements = [
     },
     {
         "symbol": "Cr",
-        "name": "chromium",
+        "name": "Chromium",
         "data": [
             [
                 1,
@@ -1345,7 +1345,7 @@ let elements = [
     },
     {
         "symbol": "Mn",
-        "name": "manganese",
+        "name": "Manganese",
         "data": [
             [
                 1,
@@ -1451,7 +1451,7 @@ let elements = [
     },
     {
         "symbol": "Fe",
-        "name": "iron",
+        "name": "Iron",
         "data": [
             [
                 1,
@@ -1561,7 +1561,7 @@ let elements = [
     },
     {
         "symbol": "Co",
-        "name": "cobalt",
+        "name": "Cobalt",
         "data": [
             [
                 1,
@@ -1675,7 +1675,7 @@ let elements = [
     },
     {
         "symbol": "Ni",
-        "name": "nickel",
+        "name": "Nickel",
         "data": [
             [
                 1,
@@ -1793,7 +1793,7 @@ let elements = [
     },
     {
         "symbol": "Cu",
-        "name": "copper",
+        "name": "Copper",
         "data": [
             [
                 1,
@@ -1915,7 +1915,7 @@ let elements = [
     },
     {
         "symbol": "Zn",
-        "name": "zinc",
+        "name": "Zinc",
         "data": [
             [
                 1,
@@ -2005,7 +2005,7 @@ let elements = [
     },
     {
         "symbol": "Ga",
-        "name": "gallium",
+        "name": "Gallium",
         "data": [
             [
                 1,
@@ -2131,7 +2131,7 @@ let elements = [
     },
     {
         "symbol": "Ge",
-        "name": "germanium",
+        "name": "Germanium",
         "data": [
             [
                 1,
@@ -2257,7 +2257,7 @@ let elements = [
     },
     {
         "symbol": "As",
-        "name": "arsenic",
+        "name": "Arsenic",
         "data": [
             [
                 1,
@@ -2343,7 +2343,7 @@ let elements = [
     },
     {
         "symbol": "Se",
-        "name": "selenium",
+        "name": "Selenium",
         "data": [
             [
                 1,
@@ -2429,7 +2429,7 @@ let elements = [
     },
     {
         "symbol": "Br",
-        "name": "bromine",
+        "name": "Bromine",
         "data": [
             [
                 1,
@@ -2519,7 +2519,7 @@ let elements = [
     },
     {
         "symbol": "Kr",
-        "name": "krypton",
+        "name": "Krypton",
         "data": [
             [
                 1,
@@ -2609,7 +2609,7 @@ let elements = [
     },
     {
         "symbol": "Ag",
-        "name": "silver",
+        "name": "Silver",
         "data": [
             [
                 1,
@@ -2699,7 +2699,7 @@ let elements = [
     },
     {
         "symbol": "I",
-        "name": "iodine",
+        "name": "Iodine",
         "data": [
             [
                 1,
