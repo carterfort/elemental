@@ -1,6 +1,13 @@
 <?php
 
-$rows = array_map('str_getcsv', file('./data.csv'));
+$csv = file_get_contents('./data.csv');
+$allRows = explode("\r", $csv);
+$rows = [];
+
+foreach ($allRows as $rowString) {
+    $rows[] = explode(',', $rowString);
+}
+
 $elements = [];
 $symbols = $rows[1];
 $names = $rows[2];
@@ -26,6 +33,8 @@ foreach ($elements as $e => &$element) {
 }
 array_shift($elements);
 
-$json = json_encode($elements);
+$json = json_encode($elements, JSON_PRETTY_PRINT);
 
-file_put_contents('./data.json', $json);
+$file = 'let elements = ' . $json;
+
+file_put_contents('./data.js', $file);

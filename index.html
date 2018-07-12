@@ -10,35 +10,23 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="https://code.highcharts.com/highcharts.src.js"></script>
     <script src="data.js"></script>
-    <style>
-        .elements {
-            display: grid;
-            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-            grid-gap: 10px;
-        }
-
-        .element {
-            background: rgb(207, 207, 207);
-        }
-    </style>
+    <link rel="stylesheet" href="./standard.css" />
 </head>
 <body>
-    <div class="container mt-4" id="app">
-        <div class="jumbotron">
-            <h1>Charts</h1>
-        </div>
+    <div id="app">
+        <div class="container mt-4" >
+            <div class="jumbotron">
+                <h1>Charts</h1>
+            </div>        
 
-        <div class="elements">
-            <div class="element text-center" v-for="element in elements" :key="element.name">
-                <h1>
-                    {{element.symbol}}
-                </h1>
-
-                <chart-component :element="element"></chart-component>
+            <div class="elements">
+                <div class="element text-center" v-for="element in elements" :key="element.name" :class="element.symbol.toLowerCase()">        
+                    <chart-component :element="element"></chart-component>
+                </div>
             </div>
         </div>
-        
     </div>
+
     <script>
 
         let ChartComponent = {
@@ -64,7 +52,7 @@
                             zoomType: 'xy'
                         },
                         title: {
-                            text: this.element.name
+                            text: this.element.name + " ("+this.element.symbol+")"
                         },
                         series: [{
                             name: this.element.symbol,
